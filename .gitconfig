@@ -1,0 +1,14 @@
+[user]
+	email = 450101+carlmon@users.noreply.github.com
+	name = carlmon
+[core]
+	editor = nvim
+	autocrlf = input
+[diff]
+	tool = meld
+[difftool]
+	prompt = false
+[difftool "meld"]
+	cmd = meld "$LOCAL" "$REMOTE"
+[init]
+	defaultBranch = main
