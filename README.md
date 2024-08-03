@@ -22,6 +22,19 @@ fc-cache -v
 ```
 Build and install neovim
 ```sh
-sudo apt install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen plocate luarocks ripgrep
+sudo apt install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen plocate luarocks ripgrep fd-find
 git clone https://github.com/neovim/neovim && cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install
+```
+Install fnm and Node
+```sh 
+curl -fsSL https://fnm.vercel.app/install | bash
+# Install Node 20
+fnm use --install-if-missing 20
+```
+Install Poetry
+```sh
+pip install pipx
+pipx install poetry
+mkdir $ZSH_CUSTOM/plugins/poetry
+poetry completions zsh > $ZSH_CUSTOM/plugins/poetry/_poetry
 ```

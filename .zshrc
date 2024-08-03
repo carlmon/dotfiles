@@ -105,3 +105,10 @@ alias aptf="apt-fast"
 alias dig="dig +noall +answer"
 alias xclip="xclip -selection c"
 alias explorer="xdg-open"
+
+# fnm
+FNM_PATH="/home/spy/.local/share/fnm"
+if [ -d "$FNM_PATH" ]; then
+  export PATH="/home/spy/.local/share/fnm:$PATH"
+  eval "`fnm env`"
+fi
