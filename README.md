@@ -13,23 +13,18 @@ ln -s -f dotfiles/.tmux/.tmux.conf
 ln -s -f dotfiles/.tmux/.tmux.conf.local
 mv .zshrc{,_orig}
 ln -s -f dotfiles/.zshrc
-ln -s -d ~/dotfiles/.config/nvim .config/nvim
+ln -s -f dotfiles/.vimrc
 ```
 Install SauceCodeProNerdFont
 ```sh 
 ln -s -d dotfiles/.fonts .fonts
 fc-cache -v
 ```
-Build and install neovim
-```sh
-sudo apt install -y ninja-build gettext libtool libtool-bin autoconf automake cmake g++ pkg-config unzip curl doxygen plocate luarocks ripgrep fd-find
-git clone https://github.com/neovim/neovim && cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo && sudo make install
-```
 Install fnm and Node
 ```sh 
 curl -fsSL https://fnm.vercel.app/install | bash
-# Install Node 20
-fnm use --install-if-missing 20
+# Install Node 24
+fnm use --install-if-missing 24
 ```
 Install Poetry
 ```sh

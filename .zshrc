@@ -99,12 +99,13 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias vi="nvim"
+alias vi="vim"
 alias ll="ls -lah"
 alias aptf="apt-fast"
 alias dig="dig +noall +answer"
 alias xclip="xclip -selection c"
 alias explorer="xdg-open"
+alias azcopy="azcopy --log-level=NONE"
 
 # fnm
 FNM_PATH="/home/spy/.local/share/fnm"
